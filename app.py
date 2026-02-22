@@ -14,7 +14,7 @@ app.add_middleware(
 
 @app.get("/api/version")
 async def get_version(request: Request, response: Response):
-    # Read incoming header
+    # Read incoming header (check)
     user_email = '22f1000821@ds.study.iitm.ac.in'
 
     # Echo it back in response header if present
