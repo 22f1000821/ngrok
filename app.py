@@ -10,6 +10,7 @@ app.add_middleware(
     allow_credentials=False,
     allow_methods=["GET", "POST", "OPTIONS"],  # Fixed: list of separate strings
     allow_headers=["*"],
+    expose_headers=["*"],         # allow client to see all response headers (not strictly needed here)
 )
 
 @app.get("/api/version")
